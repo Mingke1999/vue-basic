@@ -5,3 +5,5 @@
 #template syntax
 1.Interpolation
   v-html == innerHtml
+  v-bind: binding attributes
+  :disabled binding bool

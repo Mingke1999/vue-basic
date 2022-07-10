@@ -2,8 +2,8 @@
   <div class="hello">
     <p>{{message}}</p> <!--binding text-->
     <div v-html="mingkeLink"></div> <!--binding html-->
-    <p v-bind:class="onActive">Highlight</p> <!--binding class attribute-->
-    <p v-bind:id="vid">BindingID</p> <!--binding class id-->
+    <p :class="onActive">Highlight</p> <!--: is shortcut of v-bind, binding class attribute-->
+    <p :id="vid">BindingID</p> <!--binding class id-->
     <input :disabled="isAbled" value="Bool Attribute Disabled"/> <!--binding boolean attribute-->
     <div v-bind="objectOfAttrs">Multiple Binding Dynamic</div> <!--binding multiple attributes-->
     <p>{{number>10?"Number is bigger than 10":"Number isn't bigger than 10"}}</p> <!--Expression only not statement-->
